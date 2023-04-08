@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.fa-solid{
+    display: flex;
+    align-items: end; 
+    justify-content:end;
+    margin-right: 70px;
+    margin-top: 35px;
+    font-size: 50px;
+    background-color: transparent;
+    font-size: 30px;
+    color: blue;
+}
+.fa-bars-staggered{
+    animation: zoom 2s ease-in-out infinite ;
+}
+/* @keyframes zoom {
+    0% {
+        transform: scale(0.9);
+    }
+    25% {
+        transform: scale(2);
+    }
+    60% {
+        transform: scale(0.9);
+    }
+    100% {
+     transform: scale(0.9);
+   } 
+  } */
+  
+  .closebtn{
+      font-size: 1.75rem;
+      background: transparent;
+      border-color: transparent;
+      cursor: pointer;
+      border: none;
+      transform: translate(0%) !important;
+   
+}
+.side-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    /* background: var(--clr-white); */
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+    /* box-shadow: var(--clr-red-dark);
+    transition: var(--transition); */
+    transform: translate(-110%);
+    border: 1px solid black;
+    box-shadow: 0 0 20px #121212;
+    background-color: #121212;
+    color: white;
+}
+.text{
+    display: flex;
+}
+h4{
+    margin-left: 20px;
+}
+span{
+    color: #f9004d;
+}
+
+.texts{
+    margin-top: 35px;
+    margin-right: 150px;
+}
+.x{
+    margin-right: 200px;
+    color: #f9004d;
+    transition: all 2s ease-in-out linear ;
+    /* transform: rotate(350deg); */
+}
+.x:hover{
+    transform: rotate(190deg);
+}
+.list a{
+    color: white;
+    display: block;
+    padding: 20px 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.list a:hover{
+    background-color: #617d98;
+    width: 45%;
+}
+.list li{
+    list-style: none;
+}
+.links{
+    margin-top: 50px;
+    justify-content: space-between;
+    width: 50%;
+}
+.links .fb-logo {
+    color: blue;
+    font-size: 1.8rem;
+}
+.links .insta-logo{
+    font-size: 1.8rem;
+}
+.links .twitter-logo {
+    color: lightblue;
+    font-size: 1.8rem;
+}
+.links .git-logo {
+    color: rgb(89, 89, 100);
+    font-size: 1.8rem;
+}
+.links .linkdin-logo {
+    color: #0077B5;
+    font-size: 1.8rem;
+}
+
+@media only screen and (max-width:360px) {
+    .side-nav{
+        width: 100%;
+
+    }
+    .links{
+        margin-top: 20px;
+    }
+}
